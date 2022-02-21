@@ -14,7 +14,7 @@ const Home = () => {
             { isPending && <div> Loading...</div>}
             { blogs&& <BlogList blogs = {blogs} title = "All Blogs!!" /> }  
             { blogs&& <BlogList blogs = {blogs.filter( (blog) => blog.author === "mario")} title = "Mario's blogs"/>} 
-
+            { blogs&& <BlogList blogs = {blogs.filter( (blog) => blog.author === "yoshi")} title = "Yoshi's blogs"/>} 
            </div>
       
      );
